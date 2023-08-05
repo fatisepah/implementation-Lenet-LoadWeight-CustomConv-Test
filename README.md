@@ -1,1 +1,3 @@
 # implementation-Lenet-LoadWeight-CustomConv-Test
+
+In many research projects (for example, in hardware projects), to perform a specific task (for example, changing the multiplication operation, obtaining the maximum, and implementing different functions based on a new hardware), it is necessary to perform that operation in the Forward functions of the layers. different (for example, changing the multiplication operation in the Convolution layer), to do this, we must implement the desired layer as a Custom layer so that we can change its Forward function based on the desired task. Therefore, after writing the Forward function of this layer and putting it instead of nn.conv2d in the network, Train and Test of the network have also been done.
